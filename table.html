@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Time Table - ABES Engineering College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .timetable-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .header-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .header-section > div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .logo-box {
+            flex: 0 0 100px; /* Allocate space for the logo */
+            text-align: left;
+        }
+
+        .logo {
+            width: 50px; /* Adjust size as needed */
+            height: auto;
+            border: 1px solid #000;
+            padding: 5px;
+            /* Placeholder for the actual image */
+            background-color: #791c20; 
+            color: white;
+            font-size: 10px;
+            text-align: center;
+            line-height: 10px;
+        }
+
+        h1 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: normal;
+            margin: 5px 0 10px 0;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+        
+        .sub-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sub-header .info-left, .sub-header .info-right {
+            text-align: left;
+        }
+        
+        /* Table Styling */
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            table-layout: fixed; /* Helps in consistent column widths */
+        }
+
+        .timetable th, .timetable td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+            height: 50px; /* Consistent height for class slots */
+            vertical-align: middle;
+            white-space: pre-wrap; /* Allows text to wrap */
+        }
+
+        .timetable th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+
+        .timetable tr:nth-child() td {
+            /* For the row lines in the original image */
+            background-color: #ffffff; 
+        }
+
+        /* Specific Cell Colors (based on the image) */
+        .slot-blue { background-color: #a8d5e5; }
+        .slot-light-green { background-color: #a7f3c5; }
+        .slot-yellow { background-color: #ffe699; }
+        .slot-pink { background-color: #f7a7d4; }
+        .slot-red { background-color: #f4b0b0; }
+
+        /* Small Text inside the slots */
+        .slot-text-s { font-size: 10px; line-height: 1.2; }
+        .slot-text-m { font-size: 12px; font-weight: bold; }
+
+    </style>
+</head>
+<body>
+
+<div class="timetable-container">
+    
+    <div class="header-section">
+        <div class="logo-box">
+            <div class="logo">ABES LOGO</div>
+        </div>
+        <div>
+            <h1>ABES Engineering College, Ghaziabad</h1>
+            <h2>CLASS TIME TABLE</h2>
+            <p style="font-size: 14px; font-weight: bold; margin: 0;">DEPARTMENT: COMPUTER APPLICATIONS</p>
+        </div>
+        <div style="text-align: right; font-size: 12px; font-weight: bold;">
+            w.e.f : 15 April 2025
+        </div>
+    </div>
+    
+    <hr style="border: 0; border-top: 1px solid #000; margin: 5px 0;">
+
+    <div class="sub-header">
+        <div class="info-left">
+            <p>Alpna Lodhi</p>
+            <p>Dept: MCA</p>
+        </div>
+        <div class="info-right">
+            <p>Session - 2024-25, Even Semester</p>
+        </div>
+    </div>
+
+    <table class="timetable">
+        <thead>
+            <tr>
+                <th rowspan="2" class=" slot-text-m">TIME  /<br> DAY</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>08:50 - 09:40</th>
+                <th>09:40 - 10:30</th>
+                <th>10:40 - 11:30</th>
+                <th>11:30 - 12:20</th>
+                <th>12:20 - 01:10</th>
+                <th>01:10 - 02:00</th>
+                <th>02:00 - 02:50</th>
+                <th>02:50 - 03:40</th>
+                <th>03:40 - 04:30</th> </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td>MONDAY</td>
+                <td class="slot-blue slot-text-s">L              AB-<br>206<br>25VC-101-AL</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="slot-blue slot-text-s">L                AB-<br>206<br>25VC-101-AL</td>
+                <td colspan="2" class="slot-light-green slot-text-m">T                            AB-108<br>VACA-304 (HJ+AL)<br>Sec-B</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>TUESDAY</td>
+                <td colspan="2" class="slot-yellow slot-text-m">T<br>AB-109<br>VACA-304-HJ+AL-Sec-C</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="slot-blue slot-text-s">L                AB-<br>206<br>25VC-101-AL</td>
+                <td colspan="2" class="slot-light-green slot-text-m">Mentor-Mentee(Final Year)</td>
+            </tr>
+            <tr>
+                <td>WEDNESDAY</td>
+                <td colspan="2" class="slot-yellow slot-text-m">T<br>VACA-304 (HJ+AL)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>THURSDAY</td>
+                <td class="slot-blue slot-text-s">L         AB-<br>206<br>25VC-101-AL</td>
+                <td></td>
+                <td colspan="2" class="slot-pink slot-text-m">T<br>AB-108<br>VACA304-HJ+AL-Section-B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2" class="slot-red slot-text-m">P<br>AB-206<br>25VC154-AL+AP</td>
+            </tr>
+            <tr>
+                <td>FRIDAY</td>
+                <td></td>
+                <td></td>
+                <td colspan="2" class="slot-pink slot-text-m">T<br>AB-207<br>VACA304-HJ+AL-Sec-A</td>
+                <td></td>
+                <td></td>
+                <td class="slot-blue slot-text-s">L         AB-<br>206<br>25VC-101-AL</td>
+                <td colspan="2" class="slot-light-green slot-text-m">Mentor-Mentee(First Year)</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>
